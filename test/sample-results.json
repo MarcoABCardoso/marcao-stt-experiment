@@ -1,0 +1,63 @@
+{
+    "total_words": 30,
+    "word_error_rate": 0.3511111111111111,
+    "sentence_error_rate": 0.8,
+    "transcriptions": [
+        {
+            "text": "Como trocar senha do banco",
+            "prediction": "",
+            "word_error_rate": 1,
+            "changes": [
+                {
+                    "type": "deletion",
+                    "phrase": "Como trocar senha do banco"
+                }
+            ]
+        },
+        {
+            "text": "Como trocar senha do banco",
+            "prediction": "Como trocar senha do banco",
+            "word_error_rate": 0,
+            "changes": []
+        },
+        {
+            "text": "Como trocar senha banco",
+            "prediction": "Como trocar senha do banco",
+            "word_error_rate": 0.2,
+            "changes": [
+                {
+                    "type": "addition",
+                    "phrase": "do"
+                }
+            ]
+        },
+        {
+            "text": "Como troco senha do banco",
+            "prediction": "Como trocar senha do banco",
+            "word_error_rate": 0.2,
+            "changes": [
+                {
+                    "type": "substitution",
+                    "phrase": "troco",
+                    "with": "trocar"
+                }
+            ]
+        },
+        {
+            "text": "Como troco a senha do banco",
+            "prediction": "Como trocar senha do banco",
+            "word_error_rate": 0.3333333333333333,
+            "changes": [
+                {
+                    "type": "substitution",
+                    "phrase": "troco",
+                    "with": "trocar"
+                },
+                {
+                    "type": "deletion",
+                    "phrase": "a"
+                }
+            ]
+        }
+    ]
+}

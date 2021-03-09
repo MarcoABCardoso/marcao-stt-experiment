@@ -1,0 +1,39 @@
+{
+  "name": "marcao-stt-experiment",
+  "version": "1.0.0",
+  "description": "Runs word-error-rate evaluation on Watson STT Model",
+  "main": "lib/index.js",
+  "dependencies": {
+    "command-line-args": "^5.1.1",
+    "command-line-usage": "^6.1.1",
+    "ibm-watson": "^6.0.2",
+    "marcao-wer": "^1.0.0"
+  },
+  "devDependencies": {
+    "codecov": "^3.8.1",
+    "eslint": "^7.17.0",
+    "jest": "^26.6.3"
+  },
+  "scripts": {
+    "test": "jest --collectCoverage",
+    "lint": "eslint"
+  },
+  "bin": {
+    "marcao-stt-experiment": "bin/index.js"
+  },
+  "keywords": [
+    "Watson",
+    "Word error rate",
+    "Word error",
+    "Evaluation",
+    "Speech recognition",
+    "Speech to text",
+    "Speech-to-text"
+  ],
+  "author": "macardoso95@gmail.com",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MarcoABCardoso/marcao-stt-experiment"
+  }
+}
