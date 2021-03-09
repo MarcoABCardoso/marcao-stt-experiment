@@ -14,7 +14,7 @@
   </a>
 </p>
 
-> Runs K-Fold cross validation on Watson STT Skill
+> Runs word-error-rate evaluation on Watson STT Model
 
 ## Install
 
