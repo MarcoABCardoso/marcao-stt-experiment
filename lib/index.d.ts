@@ -29,11 +29,12 @@ interface RunExperimentOptions {
 
 interface Change {
     type: string
-    word: string
+    phrase: string
     with: string
 }
 
 interface Transcription {
+    file: string
     text: string
     prediction: string
     word_error_rate: number

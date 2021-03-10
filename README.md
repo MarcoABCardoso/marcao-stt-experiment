@@ -34,16 +34,15 @@ Marcão WER Evaluation Script
 
 Options
 
-  -h, --help                             Print usage instructions.                                                    
-  -u, --url string                       Watson STT base URL.                                                         
-  -a, --apikey string                    Watson STT API Key.                                                          
-  -i, --audioFile string                 Zip file containing audios to be tested                                      
-  -g, --groundTruthFile string           Txt file containing one transcript per line, in the same order as the audios 
-  -m, --model string                     Watson STT base model ID.                                                    
-  -c, --customizationId string           Language customization ID                                                    
-  -d, --acousticCustomizationId string   Acoustic customization ID                                                    
-  -v, --version string                   Watson STT API version. Default: 2020-07-01                                  
-  -o, --output string                    Output file. Default: results.json                                           
+  -h, --help                             Print usage instructions.                         
+  -u, --url string                       Watson STT base URL.                              
+  -a, --apikey string                    Watson STT API Key.                               
+  -f, --filePath string                  CSV file with columns [audioFilePath, transcript] 
+  -m, --model string                     Watson STT base model ID.                         
+  -c, --customizationId string           Language customization ID                         
+  -d, --acousticCustomizationId string   Acoustic customization ID                         
+  -v, --version string                   Watson STT API version. Default: 2020-07-01       
+  -o, --output string                    Output file. Default: results.json                
 
 Output
 
@@ -59,8 +58,43 @@ const stt = new STT({
   url: 'YOUR_WATSON_STT_SERVICE_URL'
 })
 
-let results = await stt.runExperiment({  audioFile: './audios.zip', groundTruthFile: './groudTruth.txt', model: 'en-US_BroadbandModel' })
+let results = await stt.runExperiment({  filePath: './groudTruth.txt', model: 'en-US_BroadbandModel' })
 ```
+
+## Sample results
+
+```json
+{
+    "total_words": 11,
+    "word_error_rate": 0.90909091,
+    "sentence_error_rate": 0.5,
+    "transcriptions": [
+        {
+            "file": "some_dir/audio_1.mp3",
+            "text": "How to change my password",
+            "prediction": "How to change my password",
+            "word_error_rate": 0,
+            "changes": []
+        },
+        {
+            "file": "some_dir/audio_2.mp3",
+            "text": "How do I change my password",
+            "prediction": "How I change my password",
+            "word_error_rate": 0.16666666666666666,
+            "changes": [
+                {
+                    "type": "deletion",
+                    "phrase": "do"
+                }
+            ]
+        }
+    ]
+}
+```
+Supported change types are currently:
+- addition
+- deletion
+- substitution
 
 ## Run tests
 

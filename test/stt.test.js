@@ -8,8 +8,7 @@ let sttOptions1 = {
 }
 
 let runExperimentOptions = {
-    audioFile: './test/_audioFile.zip',
-    groundTruthFile: './test/_groundTruthFile.txt',
+    filePath: './test/_groundTruthFile.csv',
 }
 
 let sampleResults = require('./sample-results.json')
@@ -39,6 +38,7 @@ describe('STT', () => {
             stt.runExperiment(runExperimentOptions)
                 .catch(err => done.fail(err))
                 .then(results => {
+                    require('fs').writeFileSync('results.json', JSON.stringify(results, null, 4))
                     expect(results).toEqual(sampleResults)
                     done()
                 })
