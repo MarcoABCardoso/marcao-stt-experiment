@@ -4,14 +4,7 @@
  */
 
 declare class STT {
-    /**
-     * Construct an STT object.
-     * @constructor
-     */
     constructor(options: STTOptions)
-    /**
-     * Execute experiment
-     */
     runExperiment(options: RunExperimentOptions): Promise<ExperimentResults>
 }
 
@@ -19,9 +12,16 @@ interface STTOptions {
     url: string
     version: string
     apikey: string
+    getAudio?: (audioID: string) => any
+}
+
+interface Transcription {
+    audio: string
+    transcript: string
 }
 
 interface RunExperimentOptions {
+    groundTruth: Transcription[]
     model: string
     customizationId: string
     acousticCustomizationId: string
@@ -33,7 +33,7 @@ interface Change {
     with: string
 }
 
-interface Transcription {
+interface TranscriptionResult {
     file: string
     text: string
     prediction: string
@@ -45,7 +45,7 @@ interface ExperimentResults {
     total_words: number
     word_error_rate: number
     sentence_error_rate: number
-    transcriptions: Transcription[]
+    transcriptions: TranscriptionResult[]
 }
 
 

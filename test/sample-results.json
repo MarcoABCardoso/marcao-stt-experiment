@@ -4,7 +4,7 @@
     "sentence_error_rate": 1,
     "transcriptions": [
         {
-            "file": "test/_audioFile/audio_1.mp3",
+            "audio": "test/test_audio/audio_1.mp3",
             "text": "Como trocar senha do banco",
             "prediction": "",
             "word_error_rate": 1,
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "file": "test/_audioFile/audio_2.mp3",
+            "audio": "test/test_audio/audio_2.mp3",
             "text": "Como trocar a senha do banco",
             "prediction": "Como trocar senha do banco",
             "word_error_rate": 0.16666666666666666,
@@ -28,7 +28,7 @@
             ]
         },
         {
-            "file": "test/_audioFile/audio_3.mp3",
+            "audio": "test/test_audio/audio_3.mp3",
             "text": "Como trocar senha banco",
             "prediction": "Como trocar senha do banco",
             "word_error_rate": 0.2,
@@ -40,7 +40,7 @@
             ]
         },
         {
-            "file": "test/_audioFile/audio_4.mp3",
+            "audio": "test/test_audio/audio_4.mp3",
             "text": "Como troco senha do banco",
             "prediction": "Como trocar senha do banco",
             "word_error_rate": 0.2,
@@ -53,7 +53,7 @@
             ]
         },
         {
-            "file": "test/_audioFile/audio_5",
+            "audio": "test/test_audio/audio_5",
             "text": "Como troco a senha do banco",
             "prediction": "Como trocar senha do banco",
             "word_error_rate": 0.3333333333333333,

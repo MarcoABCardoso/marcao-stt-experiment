@@ -4,10 +4,12 @@ const commandLineArgs = require('command-line-args')
 const commandLineUsage = require('command-line-usage')
 const STT = require('../lib')
 const fs = require('fs')
+const csvtojson = require('csvtojson')
 
 async function main() {
-    const stt = new STT({ ...options, verbose: true })
-    let results = await stt.runExperiment(options)
+    let groundTruth = await csvtojson().fromFile(options.filePath)
+    const stt = new STT(options)
+    let results = await stt.runExperiment({ ...options, groundTruth })
     fs.writeFileSync(options.output, JSON.stringify(results, null, 4))
 }
 
