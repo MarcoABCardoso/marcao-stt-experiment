@@ -17,7 +17,7 @@ let args = [
     { name: 'help', alias: 'h', type: Boolean, defaultValue: false, description: 'Print usage instructions.' },
     { name: 'url', alias: 'u', type: String, description: 'Watson STT base URL.' },
     { name: 'apikey', alias: 'a', type: String, description: 'Watson STT API Key.' },
-    { name: 'filePath', alias: 'f', type: String, description: 'CSV file with columns [audioFilePath, transcript]' },
+    { name: 'filePath', alias: 'f', type: String, description: 'CSV file with columns [audio, transcript]' },
     { name: 'model', alias: 'm', type: String, description: 'Watson STT base model ID.' },
     { name: 'customizationId', alias: 'c', type: String, description: 'Language customization ID' },
     { name: 'acousticCustomizationId', alias: 'd', type: String, description: 'Acoustic customization ID' },
