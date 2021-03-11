@@ -1,6 +1,6 @@
 {
   "name": "marcao-stt-experiment",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Runs word-error-rate evaluation on Watson STT Model",
   "main": "lib/index.js",
   "dependencies": {
