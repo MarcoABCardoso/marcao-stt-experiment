@@ -8,7 +8,7 @@ let sttOptions = {
 }
 
 let runExperimentOptions = {
-    groundTruth: require('./ground_truth.json'),
+    groundTruth: require('./ground-truth.json'),
     model: 'foo_model',
     customizationId: 'foo_customization_id',
     acousticCustomizationId: 'foo_acoustic_customization_id'

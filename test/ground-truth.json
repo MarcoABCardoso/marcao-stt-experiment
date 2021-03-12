@@ -9,7 +9,7 @@
     },
     {
         "audio": "test/test_audio/audio_3.mp3",
-        "transcript": "Como trocar senha banco"
+        "transcript": "Como trocar semeia banco"
     },
     {
         "audio": "test/test_audio/audio_4.mp3",
@@ -17,6 +17,6 @@
     },
     {
         "audio": "test/test_audio/audio_5",
-        "transcript": "Como troco a senha do banco"
+        "transcript": "Como troco a senha do meu banco"
     }
 ]
