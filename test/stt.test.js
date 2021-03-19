@@ -16,7 +16,7 @@ let runExperimentOptions = {
 
 let sampleResults = require('./sample-results.json')
 let v1Mock = {
-    recognize: jest.fn(() => Promise.resolve({ result: { results: [{ alternatives: [{ transcript: 'Como trocar senha do banco' }] }] } }))
+    recognize: jest.fn(() => Promise.resolve({ result: { results: [{ alternatives: [{ transcript: 'como trocar senha do banco' }] }] } }))
         .mockResolvedValueOnce({ result: { results: [] } })
 }
 
