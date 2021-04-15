@@ -6,8 +6,8 @@
   <a href="#" target="_blank">
     <img alt="License: ISC" src="https://img.shields.io/badge/License-ISC-yellow.svg" />
   </a>
-  <a href="https://codecov.io/gh/MarcoABCardoso/marcao-stt-experiment">
-    <img src="https://codecov.io/gh/MarcoABCardoso/marcao-stt-experiment/branch/master/graph/badge.svg?token=jAVuaxFWyn"/>
+  <a href='https://coveralls.io/github/MarcoABCardoso/marcao-stt-experiment?branch=master'>
+    <img src='https://coveralls.io/repos/github/MarcoABCardoso/marcao-stt-experiment/badge.svg?branch=master' alt='Coverage Status' />
   </a>
   <a href="#" target="_blank">
     <img alt="Node.js CI" src="https://github.com/MarcoABCardoso/marcao-stt-experiment/workflows/Node.js%20CI/badge.svg" />
