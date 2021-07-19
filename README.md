@@ -1,16 +1,16 @@
-<h1 align="center">marcao-stt-experiment</h1>
+<h1 align="center">watson-stt-experiment</h1>
 <p>
-  <a href="https://www.npmjs.com/package/marcao-stt-experiment" target="_blank">
-    <img alt="Version" src="https://img.shields.io/npm/v/marcao-stt-experiment.svg">
+  <a href="https://www.npmjs.com/package/watson-stt-experiment" target="_blank">
+    <img alt="Version" src="https://img.shields.io/npm/v/watson-stt-experiment.svg">
   </a>
   <a href="#" target="_blank">
     <img alt="License: ISC" src="https://img.shields.io/badge/License-ISC-yellow.svg" />
   </a>
-  <a href='https://coveralls.io/github/MarcoABCardoso/marcao-stt-experiment?branch=master'>
-    <img src='https://coveralls.io/repos/github/MarcoABCardoso/marcao-stt-experiment/badge.svg?branch=master' alt='Coverage Status' />
+  <a href='https://coveralls.io/github/MarcoABCardoso/watson-stt-experiment?branch=master'>
+    <img src='https://coveralls.io/repos/github/MarcoABCardoso/watson-stt-experiment/badge.svg?branch=master' alt='Coverage Status' />
   </a>
   <a href="#" target="_blank">
-    <img alt="Node.js CI" src="https://github.com/MarcoABCardoso/marcao-stt-experiment/workflows/Node.js%20CI/badge.svg" />
+    <img alt="Node.js CI" src="https://github.com/MarcoABCardoso/watson-stt-experiment/workflows/Node.js%20CI/badge.svg" />
   </a>
 </p>
 
@@ -19,14 +19,14 @@
 ## Install
 
 ```sh
-npm install -g marcao-stt-experiment
+npm install -g watson-stt-experiment
 ```
 
 ## Usage
 
 CLI:
 ```sh
-> marcao-stt-experiment
+> watson-stt-experiment
 
 Marcão WER Evaluation Script
 
@@ -51,7 +51,7 @@ Output
 
 As a module:
 ```js
-const STT = require('marcao-stt-experiment')
+const STT = require('watson-stt-experiment')
 const stt = new STT({ 
   version: '2020-07-01', 
   apikey: 'YOUR_WATSON_STT_API_KEY', 

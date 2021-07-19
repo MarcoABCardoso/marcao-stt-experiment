@@ -1,6 +1,6 @@
 
 /**
- * @module marcao-stt-experiment
+ * @module watson-stt-experiment
  */
 
 declare class STT {
